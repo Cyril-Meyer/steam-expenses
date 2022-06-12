@@ -1,2 +1,29 @@
 # steam-expenses
-calculate how much money you spent on steam
+Calculate how much money you spent on steam
+
+### How to use the script
+
+#### 1. Using your web browser to save the html file
+* login into your steam account
+* got the the [purchase history](https://store.steampowered.com/account/history/) page.
+* *optional : show more transactions*
+* save the file as `account_history.html`
+
+#### 2. Using requests and dev tools
+* login into your steam account
+* copy the `/account/history` request into `request.txt`
+  * open dev tools
+  * got to the network tab
+  * got the the [purchase history](https://store.steampowered.com/account/history/) page.
+  * select the `/account/history` call
+  * copy as cURL (bash)
+  * convert the the curl command into a python. Example tool [curlconverter.com](https://curlconverter.com/).
+  * put the result string into request.txt
+  * replace the `response = requests.post ...` with `response1 = requests.post ...`
+* *optional : show more transactions*
+  * select the `/account/AjaxLoadMoreHistory` call
+  * copy as cURL (bash)
+  * convert the the curl command into a python.
+  * put the result string into request.txt
+  * replace the `response = requests.post ...` with `response2 = requests.post ...`
+
