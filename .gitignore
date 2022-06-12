@@ -133,3 +133,6 @@ request.txt
 
 # html files
 account_history*
+
+# PyCharm
+.idea
