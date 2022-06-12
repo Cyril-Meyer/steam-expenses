@@ -130,3 +130,6 @@ dmypy.json
 
 # user request files
 request.txt
+
+# html files
+account_history*
